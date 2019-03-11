@@ -16,7 +16,8 @@ if __name__ == "__main__":
             from send_ping import send_ping
             send_ping()
         elif auswahl == '3':
-    	    from ISIN import 
+            from ISIN import isin_prüfen,isin_check,isin_prüzi
+            isin_check()
         elif auswahl == '99':
             print('Ende')
             break
