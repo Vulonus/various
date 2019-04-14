@@ -4,7 +4,7 @@ def send_ping():
     successful_pings = list()
     for i in range(1,256):
         r = ping('192.168.1.{}'.format(i), unit='ms', timeout=0.1)
-        if r != None:
+        if r is not None:
             print('Successfully pinged 192.168.1.{} delay: {}ms'.format(i,r))
             successful_pings.append('192.168.1.{}'.format(i))
         else:

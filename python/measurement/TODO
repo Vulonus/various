@@ -1,0 +1,7 @@
+-- TODO ---
+TODO: Tests erstellen!
+--- DONE ---
+DONE: typedMeasurementList bauen (dabei die einträge aus unsampledMeasures löschen) -> samplen -> nächste typedMeasurementList bauen -> samplen
+DONE: Sampling: 5min Bereich des ersten Eintrags bestimmen, typedMeasurementList iterieren und zeitlich letzten Eintrag des Bereiches mit 
+      self.measurementTime = Bereich-Ende, Typ und Zeit als Measurement-Objekt in sampledMeasures speichern und aus typedMeasurementList löschen
+      sampledMeasures nach zeitlichen Bereichen sortieren, ausgeben und leeren. 
