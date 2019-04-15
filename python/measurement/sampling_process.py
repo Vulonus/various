@@ -9,12 +9,11 @@ def prepare_sampling(file):
     with open(file, 'r') as f:
         for row in f.readlines():
             # 2017-01-03T10:04:45
-            liste = row.split(",")
+            liste = row.split(',')
             datetime_object = datetime.datetime.strptime(liste[0], '%Y-%m-%dT%H:%M:%S')
             unsampledMeasures.append(Measurement(datetime_object, liste[1], liste[2].replace('\n','')))
     print('Starting Sampling!')
     startSampling(unsampledMeasures)
-    
 
 def startSampling(unsampledMeasures):
     typedMeasurementList = list()
